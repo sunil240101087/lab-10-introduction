@@ -1,0 +1,160 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+ 
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a.active {
+    background-color: #3498db;
+}
+
+ 
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+ 
+.hobbies-section {
+    padding: 20px;
+}
+
+.hobbies-section h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.hobby-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hobby-category {
+    margin-bottom: 30px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #3498db;
+}
+
+.hobby-category h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.hobby-items {
+    list-style-type: none;
+}
+
+.hobby-items li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #bdc3c7;
+    margin-left: 20px;
+}
+
+.hobby-items li:before {
+    content: "• ";
+    color: #3498db;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.hobby-description {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+ 
+ 
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .hobby-items li {
+        margin-left: 10px;
+    }
+    
+    .hobby-description {
+        margin-left: 15px;
+    }
+}
+
+
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #3498db;
+    object-fit: cover; 
+    max-width: 100%; 
+}
+
+ 
+.intro-section {
+    text-align: center;
+}
+
+.profile h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.tagline {
+    color: #7f8c8d;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
